@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RetrofitWithRecyclerview</string>
+    <string name="dialog_error_no_internet_description">No Internet connection. Make sure that Wi-Fi or cellular mobile data is turned on, then try again.</string>
+    <string name="dialog_error_server_description">Looks like the server is taking to long to respond, this can be caused by either poor connectivity or an error with our servers. Please try again in a while.</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

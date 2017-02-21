@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <ImageView
+        android:id="@+id/providerImageView"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:text=""
+        android:id="@+id/userNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/dateTextView"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/listTextLeftPadding"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/listTitleTextSize" />
+
+
+    <TextView
+        android:text=""
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="17dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="@dimen/listSubTitleTextSize" />
+
+
+    <TextView
+        android:text=""
+        android:id="@+id/responsibleNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/userNameTextView"
+        android:layout_toLeftOf="@+id/statusTextView"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/listTextLeftPadding"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="@dimen/listSubTitleTextSize" />
+
+    <TextView
+        android:text=""
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/userNameTextView"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="@dimen/listSubTitleTextSize" />
+
+
+    <RelativeLayout
+        android:id="@+id/callLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/kpiTimeTextView"
+        android:layout_below="@id/responsibleNameTextView"
+        android:layout_marginTop="@dimen/dp_2"
+        android:paddingLeft="@dimen/listTextLeftPadding">
+
+        <ImageView
+            android:id="@+id/callImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_list_contacts_phone" />
+
+        <TextView
+            android:text=""
+            android:id="@+id/contactPhoneNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_2"
+            android:layout_toRightOf="@+id/callImageView"
+            android:paddingBottom="@dimen/dp_3"
+            android:gravity="bottom"
+            android:textColor="@color/listPhoneTextColor"
+            android:textSize="@dimen/listSubTitleTextSize" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:text=""
+        android:id="@+id/kpiTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/responsibleNameTextView"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_toLeftOf="@+id/notesCountTextView"
+        android:drawableLeft="@drawable/ic_list_contact_clock"
+        android:drawablePadding="@dimen/dp_3"
+        android:layout_marginTop="@dimen/dp_2"
+        android:maxLines="1"
+        android:textColor="@color/Green"
+        android:textSize="@dimen/listSubTitleTextSize" />
+
+    <TextView
+        android:text=""
+        android:id="@+id/notesCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/responsibleNameTextView"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_2"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:textSize="@dimen/listSubTitleTextSize"
+        android:textStyle="bold" />
+
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="@dimen/listTextLeftPadding"
+    android:background="@color/dividerColor" />
+
+
+</RelativeLayout>
